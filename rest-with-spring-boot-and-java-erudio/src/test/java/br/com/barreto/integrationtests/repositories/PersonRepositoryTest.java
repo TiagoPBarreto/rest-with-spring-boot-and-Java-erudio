@@ -1,15 +1,14 @@
 package br.com.barreto.integrationtests.repositories;
 
-import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +23,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
-import br.com.barreto.configs.TestsConfigs;
 import br.com.barreto.integrationtests.testcontainers.AbstracticIntegrationTest;
-import br.com.barreto.integrationtests.vo.PersonVO;
-import br.com.barreto.integrationtests.vo.wrappers.WrapperPersonVO;
 import br.com.barreto.model.Person;
 import br.com.barreto.repositories.PersonRepository;
 

@@ -3,7 +3,6 @@ package br.com.barreto.integrationtests.testcontainers;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import org.hibernate.service.spi.Startable;
 import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
